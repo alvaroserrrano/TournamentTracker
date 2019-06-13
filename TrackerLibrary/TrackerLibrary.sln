@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerLibrary", "TrackerLibrary.csproj", "{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerUI", "TrackerUI\TrackerUI.csproj", "{C2BE6077-2532-4BFB-B1EE-09828127254C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerUI", "TrackerUI\TrackerUI.csproj", "{0233411C-D0CB-4771-98FC-7AFC07804BA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,9 @@ Global
 		{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}.Debug|x86.Build.0 = Debug|x86
 		{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}.Release|x86.ActiveCfg = Release|x86
 		{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}.Release|x86.Build.0 = Release|x86
-		{C2BE6077-2532-4BFB-B1EE-09828127254C}.Debug|x86.ActiveCfg = Debug|x86
-		{C2BE6077-2532-4BFB-B1EE-09828127254C}.Debug|x86.Build.0 = Debug|x86
-		{C2BE6077-2532-4BFB-B1EE-09828127254C}.Release|x86.ActiveCfg = Release|x86
-		{C2BE6077-2532-4BFB-B1EE-09828127254C}.Release|x86.Build.0 = Release|x86
+		{0233411C-D0CB-4771-98FC-7AFC07804BA2}.Debug|x86.ActiveCfg = Debug|x86
+		{0233411C-D0CB-4771-98FC-7AFC07804BA2}.Debug|x86.Build.0 = Debug|x86
+		{0233411C-D0CB-4771-98FC-7AFC07804BA2}.Release|x86.ActiveCfg = Release|x86
+		{0233411C-D0CB-4771-98FC-7AFC07804BA2}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

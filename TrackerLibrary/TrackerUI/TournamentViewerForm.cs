@@ -1,22 +1,16 @@
 ﻿using System;
-namespace TrackerUI
+using Gtk;
+
+public partial class MainWindow : Gtk.Window
 {
-    partial class TournamentViewerForm
+    public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
-        /// <summary>
-        /// Required designer var
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-        /// <summary>
-        /// Clean up every resource being used
-        /// </summary>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                components,Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        Build();
+    }
+
+    protected void OnDeleteEvent(object sender, DeleteEventArgs a)
+    {
+        Application.Quit();
+        a.RetVal = true;
     }
 }

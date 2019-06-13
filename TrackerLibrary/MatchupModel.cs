@@ -19,6 +19,5 @@ namespace TrackerLibrary
         /// </summary>
         /// <value>The matchup round.</value>
         public int MatchupRound { get; set; }
-
     }
 }
