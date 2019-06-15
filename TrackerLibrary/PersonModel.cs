@@ -23,5 +23,6 @@ namespace TrackerLibrary
         /// </summary>
         /// <value>The cell phone number.</value>
         public string CellPhoneNumber { get; set; }
+
     }
 }

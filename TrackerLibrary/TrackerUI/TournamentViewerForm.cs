@@ -1,16 +1,30 @@
 ﻿using System;
-using Gtk;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-public partial class MainWindow : Gtk.Window
+namespace TrackerUI
 {
-    public MainWindow() : base(Gtk.WindowType.Toplevel)
+    public partial class TournamentViewerForm : Form
     {
-        Build();
-    }
+        public TournamentViewerForm()
+        {
+            InitializeComponent();
+        }
 
-    protected void OnDeleteEvent(object sender, DeleteEventArgs a)
-    {
-        Application.Quit();
-        a.RetVal = true;
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
