@@ -33,6 +33,7 @@
     <Compile Include="PrizeModel.cs" />
     <Compile Include="MatchupModel.cs" />
     <Compile Include="MatchupEntryModel.cs" />
+    <Compile Include="IDataConnection.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
