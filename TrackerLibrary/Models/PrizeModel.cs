@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TrackerLibrary
+namespace TrackerLibrary.Models
 {
     public class PrizeModel
     {
@@ -27,6 +27,20 @@ namespace TrackerLibrary
         /// Percentage of the prize
         /// </summary>
         /// <value>The price percentage.</value>
-        public double PricePercentage { get; set; }
+        public double PrizePercentage { get; set; }
+
+        public PrizeModel(string placeName, string placeNumber, string prizeAmount,string prizePercentage)
+        {
+            PlaceName = placeName;
+
+            int.TryParse(placeNumber, out int PlaceNumberValue);
+            PlaceNumber = PlaceNumberValue;
+
+            decimal.TryParse(prizeAmount, out decimal PrizeAmountValue);
+            PrizeAmount = PrizeAmountValue;
+
+            double.TryParse(prizePercentage, out double PrizePercentageValue);
+            PrizePercentage = PrizePercentageValue;
+        }
     }
 }

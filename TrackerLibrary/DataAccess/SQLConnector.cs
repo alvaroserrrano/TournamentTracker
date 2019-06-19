@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace TrackerLibrary
+using TrackerLibrary.Models;
+
+namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnection
     {
@@ -17,5 +19,7 @@ namespace TrackerLibrary
             model.Id = 1;
             return model;
         }
+
+       
     }
 }
