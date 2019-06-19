@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace TrackerLibrary
 {
-    public interface EmptyInterface
+    public interface IDataConnection
     {
         PrizeModel CreatePrize(PrizeModel model);
     }

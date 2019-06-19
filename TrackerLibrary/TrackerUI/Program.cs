@@ -12,12 +12,14 @@ namespace TrackerUI
         /// The main entry point for the application.bvcnbc
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string [] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TournamentDashboard());
-
+            //Init DB Connections
+            //TrackerLibrary.GlobalConfig.InitializeConnections(true, true);
+            //Application.Run(new TournamentDashboard());
+            Application.Run(new CreatePrizeForm());
         }
     }
 }

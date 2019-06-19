@@ -51,7 +51,6 @@
     <Compile Include="CreatePrizeForm.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="TournamentViewerForm.resx" />
     <None Include="Properties\Resources.resx" />
     <None Include="Properties\Settings.settings" />
@@ -59,6 +58,13 @@
     <None Include="CreateTournamentForm.resx" />
     <None Include="CreateTeamForm.resx" />
     <None Include="CreatePrizeForm.resx" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerLibrary.csproj">
+      <Project>{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}</Project>
+      <Name>TrackerLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

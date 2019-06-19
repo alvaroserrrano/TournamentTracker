@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{3F0FEA1D-594A-40CC-ACFE-588B15BD1741}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>TrackerLibrary</RootNamespace>
     <AssemblyName>TrackerLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
@@ -27,13 +27,21 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="TeamModel.cs" />
-    <Compile Include="PersonModel.cs" />
-    <Compile Include="TournamentModel.cs" />
-    <Compile Include="PrizeModel.cs" />
-    <Compile Include="MatchupModel.cs" />
-    <Compile Include="MatchupEntryModel.cs" />
-    <Compile Include="IDataConnection.cs" />
+    <Compile Include="Models\MatchupEntryModel.cs" />
+    <Compile Include="Models\MatchupModel.cs" />
+    <Compile Include="Models\PersonModel.cs" />
+    <Compile Include="Models\PrizeModel.cs" />
+    <Compile Include="Models\TeamModel.cs" />
+    <Compile Include="Models\TournamentModel.cs" />
+    <Compile Include="Configuration\GlobalConfig.cs" />
+    <Compile Include="DataAccess\IDataConnection.cs" />
+    <Compile Include="DataAccess\SQLConnector.cs" />
+    <Compile Include="DataAccess\TextConnector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="DataAccess\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
