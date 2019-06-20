@@ -58,7 +58,7 @@
     <None Include="CreateTournamentForm.resx" />
     <None Include="CreateTeamForm.resx" />
     <None Include="CreatePrizeForm.resx" />
-    <None Include="app.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrackerLibrary.csproj">
