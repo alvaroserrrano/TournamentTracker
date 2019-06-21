@@ -9,18 +9,26 @@ namespace TrackerLibrary.DataAccess
     public static class GlobalConfig
     {
 
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
-        public static void InitializeConnections(bool database, bool textFile)
+        public const string PrizesFile = "Prizes.csv";
+        public const string PeopleFile = "People.csv";
+        public const string TeamFile = "Teams.csv";
+        public const string TournamentFile = "Tournaments.csv";
+        public const string MatchupFile = "Matchup.csv";
+        public const string MatchupEntryFile = "MatchupEntry.csv";
+
+
+        public static IDataConnection Connection { get; private set; }
+        public static void InitializeConnections(DatabaseType db)
         {
-            if (database)
+            if (db == DatabaseType.Sql)
             {
                 SQLConnector sql = new SQLConnector();
-                Connections.Add(sql);
+                Connection = sql;
             }
-            if (textFile)
+            else if (db == DatabaseType.TextFile)
             {
                 TextConnector text = new TextConnector();
-                Connections.Add(text);
+                Connection = text;
             }
         }
         public static string CnnString(string name)

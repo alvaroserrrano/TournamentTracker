@@ -4,6 +4,8 @@ namespace TrackerLibrary.Models
 {
     public class TournamentModel
     {
+
+        public int Id { get; set; }
         /// <summary>
         /// Name of tournament
         /// </summary>
@@ -29,6 +31,15 @@ namespace TrackerLibrary.Models
         /// </summary>
         /// <value>The rounds.</value>
         public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
+        public override string ToString() => TournamentName;
+
+        public event EventHandler<DateTime> OnTournamentComplete;
+
+        public void CompleteTournament()
+        {
+            OnTournamentComplete?.Invoke(this, DateTime.Now);
+        }
+
     }
 }
     

@@ -37,6 +37,8 @@
     <Compile Include="DataAccess\IDataConnection.cs" />
     <Compile Include="DataAccess\SQLConnector.cs" />
     <Compile Include="DataAccess\TextConnector.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="DataAccess\TextConnectorProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

@@ -5,6 +5,7 @@ namespace TrackerLibrary.Models
 {
     public class TeamModel
     {
+        public int Id { get; set; }
         /// <summary>
         /// Gives members of a team
         /// </summary>
@@ -15,5 +16,7 @@ namespace TrackerLibrary.Models
         /// </summary>
         /// <value>The name of the team.</value>
         public string TeamName { get; set; }
+
+        public override string ToString() => TeamName;
     }
 }

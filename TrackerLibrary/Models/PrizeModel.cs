@@ -42,5 +42,6 @@ namespace TrackerLibrary.Models
             double.TryParse(prizePercentage, out double PrizePercentageValue);
             PrizePercentage = PrizePercentageValue;
         }
+        public override string ToString() => $"{PlaceNumber}. Platz - {PlaceName}";
     }
 }

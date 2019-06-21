@@ -3,6 +3,7 @@ namespace TrackerLibrary.Models
 {
     public class PersonModel
     {
+        public int Id { get; set; }
         /// <summary>
         /// First name
         /// </summary>
@@ -23,6 +24,12 @@ namespace TrackerLibrary.Models
         /// </summary>
         /// <value>The cell phone number.</value>
         public string CellPhoneNumber { get; set; }
+        public string FullName
+        {
+            get => $"{FirstName} {LastName}";
+        }
+
+        public override string ToString() => FullName;
 
     }
 }
