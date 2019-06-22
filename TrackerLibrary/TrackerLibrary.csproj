@@ -39,6 +39,7 @@
     <Compile Include="DataAccess\TextConnector.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="DataAccess\TextConnectorProcessor.cs" />
+    <Compile Include="TournamentLogic.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
