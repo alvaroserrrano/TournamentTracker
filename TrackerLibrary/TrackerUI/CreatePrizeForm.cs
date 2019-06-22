@@ -15,10 +15,20 @@ namespace TrackerUI
 {
     public partial class CreatePrizeForm : Form
     {
-        public CreatePrizeForm()
+        IPrizeRequestor callingForm;
+        private CreateTournamentForm createTournamentForm;
+
+        public CreatePrizeForm(IPrizeRequestor caller)
         {
             InitializeComponent();
+            callingForm = caller;
         }
+
+        public CreatePrizeForm(CreateTournamentForm createTournamentForm)
+        {
+            this.createTournamentForm = createTournamentForm;
+        }
+
         private void CreatePrizeButton_Click(object sender, EventArgs e)
         {
             if (ValidateForm())

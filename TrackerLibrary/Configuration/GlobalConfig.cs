@@ -18,6 +18,7 @@ namespace TrackerLibrary.DataAccess
 
 
         public static IDataConnection Connection { get; private set; }
+
         public static void InitializeConnections(DatabaseType db)
         {
             if (db == DatabaseType.Sql)
@@ -34,6 +35,10 @@ namespace TrackerLibrary.DataAccess
         public static string CnnString(string name)
         {
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
+        }
+        public static string AppKeyLookup(string key)
+        {
+            return ConfigurationManager.AppSettings[key];
         }
     }
 }

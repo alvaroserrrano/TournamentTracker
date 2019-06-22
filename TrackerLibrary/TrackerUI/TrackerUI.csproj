@@ -49,6 +49,8 @@
     <Compile Include="CreateTeamForm.Designer.cs" />
     <Compile Include="CreatePrizeForm.cs" />
     <Compile Include="CreatePrizeForm.Designer.cs" />
+    <Compile Include="IPrizeRequestor.cs" />
+    <Compile Include="ITeamRequestor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TournamentViewerForm.resx" />
